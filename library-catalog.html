@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalog by Genre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .genre-section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c5282;
+            border-bottom: 2px solid #4299e1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+        .book-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 12px;
+            background-color: #f8fafc;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .book-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #1a365d;
+        }
+        .book-author {
+            font-size: 13px;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+        .book-year {
+            font-size: 12px;
+            color: #718096;
+            margin-top: auto;
+        }
+        @media (max-width: 1200px) {
+            .book-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media (max-width: 800px) {
+            .book-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .book-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 400px) {
+            .book-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Catalog by Genre</h1>
+
+    <!-- Classics -->
+    <section class="genre-section">
+        <h2>Classics</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Pride and Prejudice</div>
+                <div class="book-author">Jane Austen</div>
+                <div class="book-year">1813</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Moby Dick</div>
+                <div class="book-author">Herman Melville</div>
+                <div class="book-year">1851</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">1984</div>
+                <div class="book-author">George Orwell</div>
+                <div class="book-year">1949</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">To Kill a Mockingbird</div>
+                <div class="book-author">Harper Lee</div>
+                <div class="book-year">1960</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Great Gatsby</div>
+                <div class="book-author">F. Scott Fitzgerald</div>
+                <div class="book-year">1925</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Children's Books -->
+    <section class="genre-section">
+        <h2>Children's Books</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Charlotte's Web</div>
+                <div class="book-author">E.B. White</div>
+                <div class="book-year">1952</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Very Hungry Caterpillar</div>
+                <div class="book-author">Eric Carle</div>
+                <div class="book-year">1969</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Matilda</div>
+                <div class="book-author">Roald Dahl</div>
+                <div class="book-year">1988</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Where the Wild Things Are</div>
+                <div class="book-author">Maurice Sendak</div>
+                <div class="book-year">1963</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Goodnight Moon</div>
+                <div class="book-author">Margaret Wise Brown</div>
+                <div class="book-year">1947</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Young Adult / Fantasy -->
+    <section class="genre-section">
+        <h2>Young Adult / Fantasy</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Harry Potter and the Sorcerer's Stone</div>
+                <div class="book-author">J.K. Rowling</div>
+                <div class="book-year">1997</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Hunger Games</div>
+                <div class="book-author">Suzanne Collins</div>
+                <div class="book-year">2008</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Eragon</div>
+                <div class="book-author">Christopher Paolini</div>
+                <div class="book-year">2002</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Percy Jackson: The Lightning Thief</div>
+                <div class="book-author">Rick Riordan</div>
+                <div class="book-year">2005</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">A Wrinkle in Time</div>
+                <div class="book-author">Madeleine L'Engle</div>
+                <div class="book-year">1962</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mystery / Thriller -->
+    <section class="genre-section">
+        <h2>Mystery / Thriller</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">The Girl with the Dragon Tattoo</div>
+                <div class="book-author">Stieg Larsson</div>
+                <div class="book-year">2005</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Gone Girl</div>
+                <div class="book-author">Gillian Flynn</div>
+                <div class="book-year">2012</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Da Vinci Code</div>
+                <div class="book-author">Dan Brown</div>
+                <div class="book-year">2003</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">And Then There Were None</div>
+                <div class="book-author">Agatha Christie</div>
+                <div class="book-year">1939</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Silence of the Lambs</div>
+                <div class="book-author">Thomas Harris</div>
+                <div class="book-year">1988</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Fiction -->
+    <section class="genre-section">
+        <h2>Science Fiction</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Dune</div>
+                <div class="book-author">Frank Herbert</div>
+                <div class="book-year">1965</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Ender's Game</div>
+                <div class="book-author">Orson Scott Card</div>
+                <div class="book-year">1985</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Snow Crash</div>
+                <div class="book-author">Neal Stephenson</div>
+                <div class="book-year">1992</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Neuromancer</div>
+                <div class="book-author">William Gibson</div>
+                <div class="book-year">1984</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Left Hand of Darkness</div>
+                <div class="book-author">Ursula K. Le Guin</div>
+                <div class="book-year">1969</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Non-Fiction -->
+    <section class="genre-section">
+        <h2>Non-Fiction</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Sapiens: A Brief History of Humankind</div>
+                <div class="book-author">Yuval Noah Harari</div>
+                <div class="book-year">2014</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Educated</div>
+                <div class="book-author">Tara Westover</div>
+                <div class="book-year">2018</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Immortal Life of Henrietta Lacks</div>
+                <div class="book-author">Rebecca Skloot</div>
+                <div class="book-year">2010</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Atomic Habits</div>
+                <div class="book-author">James Clear</div>
+                <div class="book-year">2018</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Outliers</div>
+                <div class="book-author">Malcolm Gladwell</div>
+                <div class="book-year">2008</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy / Self-Help -->
+    <section class="genre-section">
+        <h2>Philosophy / Self-Help</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Meditations</div>
+                <div class="book-author">Marcus Aurelius</div>
+                <div class="book-year">180</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Art of War</div>
+                <div class="book-author">Sun Tzu</div>
+                <div class="book-year">-500</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Subtle Art of Not Giving a F*ck</div>
+                <div class="book-author">Mark Manson</div>
+                <div class="book-year">2016</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Man's Search for Meaning</div>
+                <div class="book-author">Viktor E. Frankl</div>
+                <div class="book-year">1946</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Thinking Fast and Slow</div>
+                <div class="book-author">Daniel Kahneman</div>
+                <div class="book-year">2011</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Romance -->
+    <section class="genre-section">
+        <h2>Romance</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">Me Before You</div>
+                <div class="book-author">Jojo Moyes</div>
+                <div class="book-year">2012</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Notebook</div>
+                <div class="book-author">Nicholas Sparks</div>
+                <div class="book-year">1996</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">It Ends With Us</div>
+                <div class="book-author">Colleen Hoover</div>
+                <div class="book-year">2016</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Outlander</div>
+                <div class="book-author">Diana Gabaldon</div>
+                <div class="book-year">1991</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Time Traveler's Wife</div>
+                <div class="book-author">Audrey Niffenegger</div>
+                <div class="book-year">2003</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Literature / Translated Works -->
+    <section class="genre-section">
+        <h2>World Literature / Translated Works</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">The Alchemist</div>
+                <div class="book-author">Paulo Coelho</div>
+                <div class="book-year">1988</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Kafka on the Shore</div>
+                <div class="book-author">Haruki Murakami</div>
+                <div class="book-year">2002</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">One Hundred Years of Solitude</div>
+                <div class="book-author">Gabriel García Márquez</div>
+                <div class="book-year">1967</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Shadow of the Wind</div>
+                <div class="book-author">Carlos Ruiz Zafón</div>
+                <div class="book-year">2001</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Pachinko</div>
+                <div class="book-author">Min Jin Lee</div>
+                <div class="book-year">2017</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern & Popular Fiction -->
+    <section class="genre-section">
+        <h2>Modern & Popular Fiction</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <div class="book-title">The Midnight Library</div>
+                <div class="book-author">Matt Haig</div>
+                <div class="book-year">2020</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Where the Crawdads Sing</div>
+                <div class="book-author">Delia Owens</div>
+                <div class="book-year">2018</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">The Seven Husbands of Evelyn Hugo</div>
+                <div class="book-author">Taylor Jenkins Reid</div>
+                <div class="book-year">2017</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Project Hail Mary</div>
+                <div class="book-author">Andy Weir</div>
+                <div class="book-year">2021</div>
+            </div>
+            <div class="book-card">
+                <div class="book-title">Tomorrow and Tomorrow and Tomorrow</div>
+                <div class="book-author">Gabrielle Zevin</div>
+                <div class="book-year">2022</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
